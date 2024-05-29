@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #30354e;
+    align-items: flex-end;
+}
+h1 {    
+    margin: 20px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.searchform {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;    
+}
+.gsearch {
+    float: left;
+    width: auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: width .5s;
+}
+.gsearch:hover {
+    width: 280px;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url("search.png") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.nav{
+    background-color: #dd8d0c;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: #30354e;
+    border-radius: 15px;
+}
+.quicklinks {
+    margin: 0;
+    padding: 0;
+}
+#link1, #link2{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(134, 134, 136);
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+#link1:hover, #link1:active, #link2:hover, #link2:active {
+    background-color: #30354e;
+}
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("wall5.png");
+}
+.welcome {
+    width: 80%;
+    height: auto;
+    background-color: rgba(21, 25, 48, 0.8);
+    color: whitesmoke;
+    border: none;
+    padding: 15px;
+}
+.welcome h2 {
+    text-align: center;
+    font-size: 60px;
+}
+.welcome p {
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+.blink{
+    margin: 50px;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.resident, .office {
+    border: solid whitesmoke;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.resident {
+    border-radius: 15px 70px;
+}
+.office {
+    border-radius: 70px 15px;
+}
+.find1, .find2 {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+.desc {
+    font-size: 40px;
+    color: whitesmoke;
+}
+.resident:hover, .office:hover {
+    width: 380px;
+    background-color: #dd8d0c;
+}
+.side {
+    width:20%;
+    height: auto;
+    background-color:rgba(21, 25, 48, 0.8);
+    text-align: center;
+    color: whitesmoke;
+}
+.side h3 {
+    font-size: 30px;
+}
+#usname, #pwd {
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+a.one {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#log {
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+#log:hover {
+    background-color: #30354e;
+}
+a.two {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(134, 134, 136);
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+a.two:hover, a.two:active {
+    background-color: #30354e;
+}
+.info{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.about, .mission, .vision {
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.5;
+}
+.Contact{
+    margin: 0;
+    padding: 0;
+    background-image: url('wall2.jpg');
+}
+.contactnote {
+    background-color: rgba(21, 25, 48, 0.8);
+    text-align: center;
+    color: whitesmoke;
+    line-height: 1.5;
+    padding: 20px;
+}
+.contact1 {
+    display: flex;
+    background-color: rgba(21, 25, 48, 0.8);
+    color:whitesmoke;
+}
+.contactinfo,.contact11,.follow {
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    width: 33%;
+    border-right: solid whitesmoke;
+    text-align: center;
+}
+.contact11, .contact11 {
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    width: 33%;
+    border-right: solid whitesmoke;
+    text-align: center;
+}
+.fname, .email, .tel, .location {
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    color: whitesmoke;
+    background-color: rgba(21, 25, 48, 0.8);
+    border-bottom: solid whitesmoke;
+}
+.textarea {
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: rgba(21, 25, 48, 0.8);
+    border-bottom: solid whitesmoke;
+}
+.button{
+    border: none;
+    border-radius: 15px;
+    margin: 10px; 
+    padding: 15px;
+    background-color: #dd8d0c;
+    cursor: pointer;
+    color: whitesmoke;
+    width: 150px;
+}
+.button:hover {
+    background-color: #30354e;
+}
+.button:active {
+    background-color: #30354e;
+    box-shadow: 0 5px #dd8d0c;
+    transform: translateY(4px);
+}
+.servhead {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+.servlist {
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 15px;
+    line-height: 1.5;
+}
+footer {
+    background-color: #30354e;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+}
+.col1{
+    margin: 15px;
+    padding: 15px;
+    width: 33%;
+}
+.col2{
+    margin: 15px;
+    padding: 15px;
+    width: 33%;
+}
+.col3 {
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+}
+.col2 a, .col3 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+@media screen and (max-width:600px) {
+    .contact1, .nav, .contact1,.footer {
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .welcome, .contactinfo, .side, .contact11, .follow {
+        width: 100%;
+        border: none;
+    }
+    
+}
