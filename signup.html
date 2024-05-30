@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="createstyle.css">
 </head>
 <body>
-<div class="header">
-  <h1>Homelet.</h1>
-</div>
+<header>
+  <img src="homelet_logo.png" alt="homelet_logo" style="height: 80px; width: 200px; float: left;">
+</header>
+<section>
+  <div class="section1">
+    <h1 style="font-size: 60px;">Homelet</h1><hr>
+    <p style="font-size: 20px;">Create Account with us enjoy high experience</p>
+  </div>
+  <div class="section2">
+    <div class="form">
+      <h2 style="font-size: 30px;">Create Account</h2>
+      <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" placeholder="name@example.com"><br><br>
+        <label for="phone">Enter Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+254-700-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+        <label for="pwd">Password</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <label for="pwd_confirm">Confirm Password</label><br>
+        <input type="password" id="pwd_confirm" name="pwd_confirm"><br><br>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+  </div>
+</section>
 </body>
 </html>
